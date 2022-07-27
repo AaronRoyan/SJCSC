@@ -1,0 +1,36 @@
+<!--
+<img src="<%= user.avatar %>" alt="<%= user.name %>" width="100">-->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<link rel="stylesheet" href="../public/style2.css">
+
+<div class="col-md-6 login-form-2">
+    <% if(user.id==profile_user.id){ %>
+        <!-- if user matches then show the form -->
+        <form action="/users/update/<%= profile_user.id %>" enctype="multipart/form-data" method="POST">
+            <div class="form-group">
+                <br>
+                <br>
+                <input class="form-control" type="text" name="name" placeholder="Your Name"
+                    value="<%= profile_user.name %>" required>
+                <input class="form-control" type="email" name="email" placeholder="Your Email"
+                    value="<%= profile_user.email %>" required>
+            </div>
+            <!--
+        <input type="file" name="avatar" placeholder="Profile Picture">-->
+            <input class="btnSubmit" type="submit" value="Update">
+        </form>
+
+        <%}else{%>
+            <!-- else show only the profile info -->
+            <p>
+                <%= profile_user.name %>
+            </p>
+            <p>
+                <%= profile_user.email %>
+            </p>
+            <%} %>
+</div>

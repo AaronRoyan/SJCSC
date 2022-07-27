@@ -1,0 +1,9 @@
+body {
+  background: black !important;
+}
+.card-img {
+  background: url('/images/mosque.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
