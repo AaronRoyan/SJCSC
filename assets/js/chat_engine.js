@@ -4,7 +4,7 @@ class ChatEngine {
     this.chatBox = $(`#${chatBoxId}`);
     this.userEmail = userEmail;
 
-    this.socket = io.connect('http://localhost:5000'); //initiating the connection for socket.io
+    this.socket = io.connect('process.env.PORT'); //initiating the connection for socket.io
     // io is a globel variable given by socket.io
     //fires a connection
     if (this.userEmail) {
