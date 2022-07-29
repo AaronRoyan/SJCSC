@@ -34,6 +34,8 @@ const chatSockets = require('./config/chat_sockets').chatSockets(chatServer); //
 chatServer.listen(5000);
 console.log('chat server is listening on port 5000');
 
+require('dotenv').config();
+
 // const initializePassport = require('./passport-config');
 // initializePassport(
 //   passport,
@@ -250,10 +252,13 @@ function checkNotAuthenticated(req, res, next) {
 app.use(express.static('public'));
 app.use('/blogs', blogRouter);
 
-app.listen(port, function (err) {
+app.listen(process.env.PORT || port, function (err) {
   if (err) {
     console.log(`Error in running the server: ${err}`);
   }
 
   console.log(`Server is running on port: ${port}`);
 });
+
+
+// password mongo db :- AErRhq2HHKhzLK79

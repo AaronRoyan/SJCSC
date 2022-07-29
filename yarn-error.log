@@ -1,0 +1,73 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\aaron\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add dotenv
+
+PATH: 
+  C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\cygwin64\bin;C:\Users\aaron\AppData\Local\Microsoft\WindowsApps;C:\Users\aaron\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\aaron\.dotnet\tools;C:\Users\aaron\AppData\Roaming\npm;C:\adb;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\cygwin64\bin;C:\MinGW\bin;C:\composer;C:\xampp\php;C:\Program Files\MongoDB\Server\5.0\bin;C:\Users\aaron\AppData\Local\Programs\mongosh\;C:\Program Files\jdk-17.0.2\bin;C:\Users\aaron\anaconda3\bin;C:\Users\aaron\anaconda3\envs\Denv\Scripts;C:\src\flutter\bin;C:\src\flutter\packages\flutter\lib\src\material\animated_icons;C:\Python310\Lib\pip-22.0.4;C:\Users\aaron\AppData\Local\Microsoft\WindowsApps;C:\Users\aaron\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\aaron\.dotnet\tools;C:\Users\aaron\AppData\Roaming\npm;C:\Program Files\php;C:\Users\aaron\AppData\Local\GitHubDesktop\bin;C:\Users\aaron\AppData\Roaming\Composer\vendor\bin;C:\Users\aaron\AppData\Local\atom\bin;C:\Program Files\JetBrains\PyCharm 2022.1.1\bin;
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.18.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'D:\Aaron\Code\sjcsc\node_modules\bcrypt\lib\binding\napi-v3\bcrypt_lib.node'
+
+npm manifest: 
+  {
+    "name": "codeial",
+    "version": "1.0.0",
+    "description": "My all social media web application",
+    "main": "index.js",
+    "scripts": {
+      "start": "nodemon index.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "social"
+    ],
+    "author": "C.Ranjith",
+    "license": "ISC",
+    "dependencies": {
+      "bcrypt": "^5.0.1",
+      "body-parser": "^1.19.0",
+      "connect-flash": "^0.1.1",
+      "connect-mongo": "^2.0.3",
+      "cookie-parser": "^1.4.4",
+      "crypto": "^1.0.1",
+      "dompurify": "^2.0.15",
+      "ejs": "^2.6.2",
+      "express": "^4.16.4",
+      "express-ejs-layouts": "^2.5.0",
+      "express-session": "^1.15.6",
+      "jsdom": "^16.4.0",
+      "jsonwebtoken": "^8.5.1",
+      "kue": "^0.11.6",
+      "method-override": "^3.0.0",
+      "mongoose": "^5.13.14",
+      "mongoose-slug-generator": "^1.0.4",
+      "multer": "^1.4.1",
+      "node-sass-middleware": "^1.0.1",
+      "nodemailer": "^6.7.6",
+      "passport": "^0.6.0",
+      "passport-google-oauth": "^2.0.0",
+      "passport-jwt": "^4.0.0",
+      "passport-local": "^1.0.0",
+      "razorpay": "^2.0.6",
+      "socket.io": "^2.5.0",
+      "string-strip-html": "^6.0.0"
+    },
+    "devDependencies": {
+      "dotenv": "^8.0.0",
+      "nodemon": "^1.19.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
